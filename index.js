@@ -11,12 +11,14 @@ const app = express()
 const port = 3002
 //allows  litsen to server
 app.listen(port, () => { })
+//allows the viewing of static elements
+app.use(express.static('public'))
 //request to the server
 app.get('/', (req, res) => {
     res.send('Server del mio blog')
 })
 app.get('/bacheca', (req, res) => {
-    res.send([
+    const posts = [
         {
             title: "ciambellone",
             content: "dolce",
@@ -43,5 +45,6 @@ app.get('/bacheca', (req, res) => {
             image: "torta_paesana.jpeg",
             tags: ["farina", "uova", "zucchero", "acqua"]
         },
-    ])
+    ]
+    res.send(posts)
 })
