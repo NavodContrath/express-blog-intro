@@ -22,27 +22,27 @@ app.get('/bacheca', (req, res) => {
         {
             title: "ciambellone",
             content: "dolce",
-            image: "ciambellone.jpeg",
+            image: "/images/ciambellone.jpeg",
             tags: ["cioccolato", "farina", "uova", "acqua"]
         }, {
             title: "cracker di barbabietola",
             content: "snack",
-            image: "cracker_barbabietola.jpeg",
+            image: "/images/cracker_barbabietola.jpeg",
             tags: ["farina", "barbabietola", "sale", "acqua"]
         }, {
             title: "pane fritto dolce",
             content: "pane",
-            image: "pane_fritto_dolce.jpeg",
+            image: "/images/pane_fritto_dolce.jpeg",
             tags: ["farina", "acqua", "zucchero", "uova"]
         }, {
             title: "pasta di barbabietole",
             content: "pasta",
-            image: "pasta_barbabietola.jpeg",
+            image: "/images/pasta_barbabietola.jpeg",
             tags: ["farina", "barbabietola", "acqua", "uova"]
         }, {
             title: "torta paesana",
             content: "dolce",
-            image: "torta_paesana.jpeg",
+            image: "/images/torta_paesana.jpeg",
             tags: ["farina", "uova", "zucchero", "acqua"]
         },
     ]
