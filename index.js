@@ -15,3 +15,31 @@ app.listen(port, () => { })
 app.get('/', (req, res) => {
     res.send('Server del mio blog')
 })
+const posts = [
+    {
+        title: "ciambellone",
+        content: "dolce",
+        image: "ciambellone.jpeg",
+        tags: ["cioccolato", "farina", "uova", "acqua"]
+    }, {
+        title: "cracker di barbabietola",
+        content: "snack",
+        image: "cracker_barbabietola.jpeg",
+        tags: ["farina", "barbabietola", "sale", "acqua"]
+    }, {
+        title: "pane fritto dolce",
+        content: "pane",
+        image: "pane_fritto_dolce.jpeg",
+        tags: ["farina", "acqua", "zucchero", "uova"]
+    }, {
+        title: "pasta di barbabietole",
+        content: "pasta",
+        image: "pasta_barbabietola.jpeg",
+        tags: ["farina", "barbabietola", "acqua", "uova"]
+    }, {
+        title: "torta paesana",
+        content: "dolce",
+        image: "torta_paesana.jpeg",
+        tags: ["farina", "uova", "zucchero", "acqua"]
+    },
+]
